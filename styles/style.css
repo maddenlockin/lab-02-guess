@@ -8,16 +8,16 @@ body {
     --color5: hsla(170, 28%, 95%, 1); */
 
     --color1: hsla(45, 86%, 83%, 1);
-    --color2: rgb(252, 189, 150);
+    --color2: rgb(252, 210, 184);
     --color3: rgb(252, 237, 229);
-    --color4: rgb(247, 189, 15);
+    --color4: rgb(248, 215, 123);
     --color5: rgb(250, 242, 169);
     
     --header-height: 100px;
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--color2);
 }
 
@@ -41,7 +41,7 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 2px var(--color4);
     font-size: 20px;
 }
 
@@ -52,6 +52,7 @@ header {
     background-color: var(--color3);
     height: var(--header-height);
     font-size: 40px;
+    border: 2px solid var(--color4);
 }
 
 
@@ -60,6 +61,6 @@ button, input, span, div {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 10px;
 }
