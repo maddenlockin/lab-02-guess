@@ -14,20 +14,25 @@
 
 <body>
     <header>
-        
+        <h1>Guess the Number!</h1>
     </header>
     <main>
+        <section>
+            See if you can guess the number the computer generates.
+            <br>
+            Hint: it is between 1 and 20!
+        </section>
         <input placeholder="number here" id="number-input">
-        <button id= 'guess-button'>Guess!</button>
-        <img id= 'feedback-img' src= ""/>
+        <button id='guess-button'>Guess!</button>
+        <!-- <img id= 'feedback-img' src= ""/> -->
         <div id='feedback-div'></div>
         <div id="remaining-guesses"></div>
         <label for="correct-guesses">Correct guesses</label>
         <span id="correct-guesses"></span>
         <label for="total-tries">Total tries</label>
         <span id="total-tries"></span>
-        <button id="reset">Guess again!</button>
-        
+        <!-- <button id="reset">Reset!</button> -->
+
     </main>
     <script type="module" src="./app.js"></script>
 </body>
