@@ -11,7 +11,7 @@ const divResult = document.getElementById('feedback-div');
 const remainingDisplay = document.getElementById('remaining-guesses');
 const correctGuessesDis = document.getElementById('correct-guesses');
 const totalTriesDis = document.getElementById('total-tries');
-//const resetButton = document.getElementById('reset');
+const resetButton = document.getElementById('reset');
 
 let remainingGuesses = 5;
 let correctGuesses = 0;
@@ -49,17 +49,17 @@ button.addEventListener('click', () => {
     }
     if (remainingGuesses === 0) {
         divResult.textContent = 'no more tries :( play again?';
-        totalTries++;
-        totalTriesDis.textContent = totalTries;
         userGuessInput.classList.toggle('hide');
         button.classList.toggle('hide');
     }
-    // resetButton.addEventListener('click', () => {
-    //      divResult. = 'none';
-    // set all divs to empty strings
-    //     targetNumber = Math.ceil(Math.random() * 20);
+    resetButton.addEventListener('click', () => {
+        // set all divs to empty strings
+        divResult.textContent = '';
+        remainingDisplay.textContent = '';
+        userGuessInput.value = ''; 
+        targetNumber = Math.ceil(Math.random() * 20);
 
-    // });
+    });
 });
 
 // can look in dev tools and see which attribute exists (ex. .value even though not stated in element) enter: document.getElementById('number-input').value and see if it returns the user input value
