@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Guess it!</title>
 </head>
 
 <body>
@@ -21,6 +21,12 @@
         <button id= 'guess-button'>Guess!</button>
         <img id= 'feedback-img' src= ""/>
         <div id='feedback-div'></div>
+        <div id="remaining-guesses"></div>
+        <label for="correct-guesses">Correct guesses</label>
+        <span id="correct-guesses"></span>
+        <label for="total-tries">Total tries</label>
+        <span id="total-tries"></span>
+        <button id="reset">Guess again!</button>
         
     </main>
     <script type="module" src="./app.js"></script>
