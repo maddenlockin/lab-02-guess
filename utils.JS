@@ -8,3 +8,4 @@ export function compareNumbers(userGuess, targetNumber) {
 
 }
 // this function takes in 2 values and returns comparative values
+// making github take the commit, yay
