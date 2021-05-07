@@ -6,7 +6,6 @@ const button = document.getElementById('guess-button');
 
 // below is using only the .value attribute of the element number-input
 const userGuessInput = document.getElementById('number-input');
-//const imgResult = document.getElementById('feedback-img');
 const divResult = document.getElementById('feedback-div');
 const remainingDisplay = document.getElementById('remaining-guesses');
 const correctGuessesDis = document.getElementById('correct-guesses');
@@ -21,8 +20,6 @@ let targetNumber = Math.ceil(Math.random() * 20);
 button.addEventListener('click', () => {
     const userGuess = userGuessInput.value;
     const compareNumbersResult = compareNumbers(userGuess, targetNumber);
-    console.log(compareNumbersResult);
-    console.log(targetNumber);
 
     if (compareNumbersResult === -1) {
         divResult.textContent = 'thats too low :(';
